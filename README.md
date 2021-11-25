@@ -1,5 +1,11 @@
 # VRDL_project2
 
+
+## Acknowledge
+yolov3: https://github.com/ultralytics/yolov3.git
+The folder my_yolov3 is rewriteed from the above github resources.
+
+
 ## Requirements
 
 To install requirements:
