@@ -4,28 +4,16 @@ from data_gen import DigitDataset, get_all_image_size
 import os
 num = 33402
 
-for i in range(1, num+1):
-    shutil.copyfile(
-        f"train/train/{i}.png",
-        f"../Street-View-House-Numbers-Detection/data/svhn/train/{i}.png")
-
-shutil.copytree(
-    "../my_dataset", "../yolov5/my_dataset",
-    symlinks=False, ignore=None, copy_function=shutil.copy2,
-    ignore_dangling_symlinks=False, dirs_exist_ok=False)
-
-shutil.copytree(
-    "../VRDL_project2", "../VRDL_project2_ver2",
-    symlinks=False, ignore=None,
-    copy_function=shutil.copy2, ignore_dangling_symlinks=False,
-    dirs_exist_ok=False)
-
-image_size_list = get_all_image_size("train/train", 33402)
+image_size_list = \
+    get_all_image_size("myDataset/images/preprocess_train", 33402)
 digit_data_answer_dict = \
-    mat73.loadmat('./train/train/digitStruct.mat', use_attrdict=True)
+    mat73.loadmat('myDataset/images/train/digitStruct.mat', use_attrdict=True)
 
 for j in range(1, num+1):
-    des = "../Street-View-House-Numbers-Detection/data/svhn/train/"
+    if j % 10 <= 7:
+        des = "myDataset/images/train"
+    else:
+        des = "myDataset/images/valid"
     file = open(des+f"{j}.txt", "w")
     data = digit_data_answer_dict["digitStruct"]["bbox"][j-1]
     w, h = image_size_list[j-1]
