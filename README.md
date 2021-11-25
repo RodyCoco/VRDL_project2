@@ -44,4 +44,4 @@ put the weights.pt in my_yolov3/weights and run:
 python evaluation.py
 ```
 ## Model Weight Link
-https://drive.google.com/drive/folders/1qMi1xaPWkpJr7vNadyh4fJ_niqN22O92?usp=sharing
+https://drive.google.com/file/d/1s0iiKQGh-MWlcchAs43w0zwvmGyr6bAw/view?usp=sharing
