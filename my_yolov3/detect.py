@@ -34,7 +34,6 @@ from utils.general import (LOGGER, check_file, check_img_size, check_imshow, che
 from utils.plots import Annotator, colors, save_one_box
 from utils.torch_utils import select_device, time_sync
 
-num = 0
 @torch.no_grad()
 def run(weights=ROOT / 'yolov3.pt',  # model.pt path(s)
         source=ROOT / 'data/images',  # file/dir/URL/glob, 0 for webcam
@@ -105,9 +104,6 @@ def run(weights=ROOT / 'yolov3.pt',  # model.pt path(s)
     dt, seen = [0.0, 0.0, 0.0], 0
     
     for path, im, im0s, vid_cap, s in dataset:
-        global num
-        num+=1
-        print("detect:",num)
         t1 = time_sync()
         h, w = int(im0s.shape[0]), int(im0s.shape[1])
         im = torch.from_numpy(im).to(device)
