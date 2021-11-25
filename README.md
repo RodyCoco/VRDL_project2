@@ -46,7 +46,7 @@ python my_yolov3/train.py --data myDataset.yaml --weights yolov3.pt --img 320\
 
 ## Generating answer.json
 
-run:
+run:(Need to put images and weights in the above instruction)
 
 ```
 python evaluation.py
