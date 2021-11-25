@@ -10,7 +10,7 @@ pip install -r my_yolov3/requirements.txt
 
 ```
 
-# create an folder named "my_dataset" and it contains subfolder liking below:
+# create an folder named "my_dataset" and it contains subfolder like below:
 
 ```
 my_dataset
