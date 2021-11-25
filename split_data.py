@@ -5,15 +5,15 @@ import os
 num = 33402
 
 image_size_list = \
-    get_all_image_size("myDataset/images/preprocess_train", 33402)
+    get_all_image_size("my_dataset/images/preprocess_train", 33402)
 digit_data_answer_dict = \
-    mat73.loadmat('myDataset/images/train/digitStruct.mat', use_attrdict=True)
+    mat73.loadmat('my_dataset/images/train/digitStruct.mat', use_attrdict=True)
 
 for j in range(1, num+1):
     if j % 10 <= 7:
-        des = "myDataset/images/train"
+        des = "my_dataset/images/train"
     else:
-        des = "myDataset/images/valid"
+        des = "my_dataset/images/valid"
     file = open(des+f"{j}.txt", "w")
     data = digit_data_answer_dict["digitStruct"]["bbox"][j-1]
     w, h = image_size_list[j-1]
