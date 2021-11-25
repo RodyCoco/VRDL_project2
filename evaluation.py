@@ -8,13 +8,13 @@ import json
 
 
 
-def model(source="my_dataset/images/test/",weights= 'my_yolov3/weights/weights.pt'):
+def model(source="my_dataset/images/test/"):
     if os.path.exists("runs"):
         shutil.rmtree("runs")
     
     
     
-    pred = run(weights = weights,
+    pred = run(weights = "VRDL_project2/my_yolov3/weights/weights.pt",
     source = source,
     imgsz = [320, 320],
     conf_thres = 0.05,
