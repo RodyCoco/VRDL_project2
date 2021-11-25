@@ -1,4 +1,4 @@
-from my_yolov3.detect import run
+from VRDL_project2.my_yolov3.detect import run
 import shutil
 import os
 from PIL import Image
@@ -8,13 +8,13 @@ import json
 
 
 
-def model(source="my_dataset/images/test/"):
+def model(source="my_dataset/images/test/",weights= 'my_yolov3/weights/weights.pt'):
     if os.path.exists("runs"):
         shutil.rmtree("runs")
     
     
     
-    pred = run(weights = 'my_yolov3/weights/weights.pt',
+    pred = run(weights = weights,
     source = source,
     imgsz = [320, 320],
     conf_thres = 0.05,
