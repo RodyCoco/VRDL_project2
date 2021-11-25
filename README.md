@@ -37,7 +37,8 @@ run:
 python my_yolov3/train.py --data myDataset.yaml --weights yolov3.pt --img 320\
         --cfg yolov3.yaml --epochs 40 --device 0,1,2,3 --batch-size 16
 ```
-The result of training will stored in VRDL_project2/my_yolov3/runs/train
+The training result and weights will stored in VRDL_project2/my_yolov3/runs/train
+
 ## Generating answer.json to reproduce the performance
 First put the weights.pt in my_yolov3/weights and testing images in my_dataset/images/test
 
