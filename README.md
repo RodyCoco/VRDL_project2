@@ -21,8 +21,8 @@ pip install -r requirements.txt
 NVIDIA GeForce 3090
 
 ## Preprocessing for Training
-First put all train images provided in homework in my_dataset/images/proprocess_train and put .mat file in  my_dataset/images/proprocess_train
-#Then run
+First put all train images provided in homework in my_dataset/images/proprocess_train and put .mat file in  my_dataset/images/proprocess_train. Then run
+:
 ```
 python split_data.py
 ```
