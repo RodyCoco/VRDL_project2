@@ -44,7 +44,7 @@ python my_yolov3/train.py --data myDataset.yaml --weights yolov3.pt --img 320\
         --cfg yolov3.yaml --epochs 40 --device 0,1,2,3 --batch-size 64
 ```
 
-## Generating answer.json
+## Generating answer.json to reproduce the performance
 
 run:(Need to put images and weights in the above instruction)
 
