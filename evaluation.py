@@ -1,11 +1,11 @@
-from yolov3.detect import run
+from my_yolov3.detect import run
 import shutil
 import os
 from PIL import Image
 import os
 import json
 
-weights = 'yolov3/weights/best.pt'
+weights = 'yolov3/weights/weights.pt'
 source = "my_dataset/images/test/"
 imgsz = [320, 320]
 conf_thres = 0.05
