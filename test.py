@@ -1,4 +1,4 @@
-from yolov3.detect import run
+from my_yolov3.detect import run
 import shutil
 import os
 from PIL import Image
