@@ -7,7 +7,9 @@ num = 33402
 image_size_list = \
     get_all_image_size("my_dataset/images/preprocess_train", 33402)
 digit_data_answer_dict = \
-    mat73.loadmat('my_dataset/images/train/digitStruct.mat', use_attrdict=True)
+    mat73.loadmat(
+        'my_dataset/images/preprocess_train/digitStruct.mat',
+        use_attrdict=True)
 
 for j in range(1, num+1):
     if j % 10 <= 7:
