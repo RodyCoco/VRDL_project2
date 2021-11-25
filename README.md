@@ -10,6 +10,17 @@ pip install -r my_yolov3/requirements.txt
 
 ```
 
+# create an folder named "my_dataset" and it contains subfolder liking below:
+
+my_dataset
+├── images
+│   ├── test put testing picture 
+│   ├── train put training picture here
+│   ├── valid put validation picture here
+├── labels
+│   ├── train put training labels here
+│   ├── valid put validation labels here
+
 ## Hardware
 
 NVIDIA GeForce 3090
