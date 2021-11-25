@@ -1,1 +1,10 @@
-
+*.png
+*.pt
+*.txt
+my_dataset/images/test/*.png
+my_dataset/images/train/*.png
+my_dataset/images/valid/*.png
+my_dataset/labels/train/*.txt
+my_dataset/labels/valid/*.txt
+my_yolov3/*.pt
+my_yolov3/weights/*.pt
