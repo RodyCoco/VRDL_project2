@@ -5,64 +5,40 @@ from PIL import Image
 import os
 import json
 
-weights = 'my_yolov3/weights/weights.pt'
-source = "my_dataset/images/test/"
-imgsz = [320, 320]
-conf_thres = 0.05
-iou_thres = 0.8
-max_det = 4
-device = ""
-view_img = False
-save_txt = True
-save_conf = True
-save_crop = False
-nosave = False
-classes = None
-agnostic_nms = False
-augment = False
-visualize = False
-update = False
-project = "runs/detect"
-name = "test"
-exist_ok = False
-line_thickness = 3
-hide_labels = False
-hide_conf = False
-half = False
-dnn = False
 
 
-def model(dir=""):
+
+def model(source="my_dataset/images/test/"):
     if os.path.exists("runs"):
         shutil.rmtree("runs")
     
     
     
-    pred = run(weights=weights,
-    source=source,
-    imgsz=imgsz,
-    conf_thres=conf_thres,
-    iou_thres=iou_thres,
-    max_det=max_det
-    ,device=device,
-    view_img=view_img,
-    save_txt=save_txt,
-    save_conf=save_conf,
-    save_crop=save_crop,
-    nosave=nosave,
-    classes=classes,
-    agnostic_nms=agnostic_nms,
-    augment=augment,
-    visualize=visualize,
-    update=update,
-    project=project,
-    name=name,
-    exist_ok=exist_ok,
-    line_thickness=line_thickness,
-    hide_labels=hide_labels,
-    hide_conf=hide_conf,
-    half=half,
-    dnn=dnn,
+    pred = run(weights = 'my_yolov3/weights/weights.pt',
+    source = source,
+    imgsz = [320, 320],
+    conf_thres = 0.05,
+    iou_thres = 0.8,
+    max_det = 4,
+    device = "0",
+    view_img = False,
+    save_txt = True,
+    save_conf = True,
+    save_crop = False,
+    nosave = False,
+    classes = None,
+    agnostic_nms = False,
+    augment = False,
+    visualize = False,
+    update = False,
+    project = "runs/detect",
+    name = "test",
+    exist_ok = False,
+    line_thickness = 3,
+    hide_labels = False,
+    hide_conf = False,
+    half = False,
+    dnn = False,
     )
     
     
