@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 ```
 
-# replace your picture in below instruction
+# replace your image in below instruction
 
 ```
 my_dataset
@@ -28,6 +28,8 @@ my_dataset
 │   ├── train replace your training labels here
 │   ├── valid replace your validation labels here
 ```
+
+## put the weights.pt in my_yolov3/weights 
 
 ## Hardware
 
@@ -44,7 +46,7 @@ python my_yolov3/train.py --data myDataset.yaml --weights yolov3.pt --img 320\
 
 ## Generating answer.json
 
-put the weights.pt in my_yolov3/weights and run:
+run:
 
 ```
 python evaluation.py
