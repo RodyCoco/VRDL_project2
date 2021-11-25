@@ -13,9 +13,9 @@ digit_data_answer_dict = \
 
 for j in range(1, num+1):
     if j % 10 <= 7:
-        des = "my_dataset/images/train"
+        des = "my_dataset/labels/train/"
     else:
-        des = "my_dataset/images/valid"
+        des = "my_dataset/labels/train/"
     file = open(des+f"{j}.txt", "w")
     data = digit_data_answer_dict["digitStruct"]["bbox"][j-1]
     w, h = image_size_list[j-1]
