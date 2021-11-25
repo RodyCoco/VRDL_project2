@@ -10,7 +10,7 @@ for j in range(1, num+1):
     else:
         des = "my_dataset/images/valid/"
     shutil.copyfile(
-        "my_dataset/images/proprecess_train/{j}.png", des+"{j}.png")
+        f"my_dataset/images/preprocess_train/{j}.png", des+f"{j}.png")
 
 image_size_list = \
     get_all_image_size("my_dataset/images/preprocess_train", 33402)
