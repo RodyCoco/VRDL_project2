@@ -25,8 +25,8 @@ for j in range(1, num+1):
             else:
                 label = int(data['label'][i])
             height, left, top, width =\
-                data['height'][i], data['left'][i],
-            data['top'][i], data['width'][i]
+                data['height'][i], data['left'][i],\
+                data['top'][i], data['width'][i]
             center_x, center_y, box_w, box_h = \
                 (left+width/2)/w, (top+height/2)/h, width/w, height/h
             s = "{} {} {} {} {}\n" \
