@@ -25,8 +25,7 @@ NVIDIA GeForce 3090
 ## Preprocessing for Training
 
 
-First put all train images provided in homework in my_dataset/images/train
-Then run
+First put all train images provided in homework in my_dataset/images/train. Then run
 ```
 python split_data.py
 ```
