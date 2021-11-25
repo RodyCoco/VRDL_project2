@@ -5,7 +5,7 @@ from PIL import Image
 import os
 import json
 
-weights = 'yolov3/weights/weights.pt'
+weights = 'my_yolov3/weights/weights.pt'
 source = "my_dataset/images/test/"
 imgsz = [320, 320]
 conf_thres = 0.05
