@@ -15,12 +15,12 @@ pip install -r my_yolov3/requirements.txt
 ```
 my_dataset
 ├── images
-│   ├── test put testing picture here
-│   ├── train put training picture here
-│   ├── valid put validation picture here
+│   ├── test  replace your testing picture here
+│   ├── train replace your training picture here
+│   ├── valid replace your validation picture here
 ├── labels
-│   ├── train put training labels here
-│   ├── valid put validation labels here
+│   ├── train replace your training labels here
+│   ├── valid replace your validation labels here
 ```
 
 ## Hardware
