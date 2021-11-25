@@ -32,7 +32,7 @@ half = False
 dnn = False
 
 
-def model(source,weights=weights):
+def model(source=source,weights=weights):
     if os.path.exists("runs"):
         shutil.rmtree("runs")
     
