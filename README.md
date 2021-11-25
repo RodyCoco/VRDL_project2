@@ -1,4 +1,4 @@
-# VRDL_project1
+# VRDL_project2
 
 ## Requirements
 
