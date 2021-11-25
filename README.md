@@ -6,7 +6,6 @@ To install requirements:
 
 ```setup
 pip install -r requirements.txt
-pip install -r my_yolov3/requirements.txt
 
 ```
 
