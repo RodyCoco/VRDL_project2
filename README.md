@@ -16,8 +16,6 @@ pip install -r requirements.txt
 
 ```
 
-## put the weights.pt in my_yolov3/weights and testing images in my_dataset/images/test
-
 ## Hardware
 
 NVIDIA GeForce 3090
@@ -41,8 +39,11 @@ python my_yolov3/train.py --data myDataset.yaml --weights yolov3.pt --img 320\
 ```
 
 ## Generating answer.json to reproduce the performance
+```
+First put the weights.pt in my_yolov3/weights and testing images in my_dataset/images/test
+```
 
-run:(Needweights in the above instruction)
+Then run:
 
 ```
 python evaluation.py
