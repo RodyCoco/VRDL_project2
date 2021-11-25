@@ -6,7 +6,7 @@ import os
 import json
 
 weights = 'yolov3/weights/best.pt'
-source = "../my_dataset/images/test/"
+source = "my_dataset/images/test/"
 imgsz = [320, 320]
 conf_thres = 0.05
 iou_thres = 0.8
@@ -33,8 +33,8 @@ dnn = False
 
 
 def model(dir=""):
-    if os.path.exists("yolov3/runs/detect/result"):
-        shutil.rmtree("yolov3/runs/detect/result")
+    if os.path.exists("runs"):
+        shutil.rmtree("runs")
     
     
     
@@ -70,7 +70,7 @@ def model(dir=""):
 
 if __name__ == "__main__":
     model_detection_output = model()
-    data_listdir = os.listdir("../my_dataset/images/test")
+    data_listdir = os.listdir("my_dataset/images/test/")
     data_listdir.sort(key = lambda x: int(x[:-4]))
     TEST_IMAGE_NUMBER = 13068
     result_to_json = []
@@ -110,4 +110,5 @@ if __name__ == "__main__":
         with open("answer.json", "w") as outfile:
             outfile.write(json_object)
             
-    shutil.rmtree("yolov3/runs/detect/result")
+    if os.path.exists("runs"):
+        shutil.rmtree("runs")
