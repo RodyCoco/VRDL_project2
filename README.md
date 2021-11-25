@@ -21,7 +21,7 @@ pip install -r requirements.txt
 NVIDIA GeForce 3090
 
 ## Preprocessing for Training
-First put all train images provided in homework in my_dataset/images/proprocess_train. 
+First put all train images provided in homework in my_dataset/images/proprocess_train and put .mat file in  my_dataset/images/proprocess_train
 #Then run
 ```
 python split_data.py
@@ -37,7 +37,7 @@ run:
 python my_yolov3/train.py --data myDataset.yaml --weights yolov3.pt --img 320\
         --cfg yolov3.yaml --epochs 40 --device 0,1,2,3 --batch-size 64
 ```
-
+The result of training will stored in VRDL_project2/my_yolov3/runs/train
 ## Generating answer.json to reproduce the performance
 First put the weights.pt in my_yolov3/weights and testing images in my_dataset/images/test
 
