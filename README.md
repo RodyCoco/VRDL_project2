@@ -35,11 +35,18 @@ my_dataset
 
 NVIDIA GeForce 3090
 
+## Preprocessing for Training
+
+```
+First put all train images provided in homework in my_dataset/images/train
+The run 「python split_data.py」 to split train data into train and valid, and
+it will also create the labels in my_dataset/label/train and in my_dataset/label/valid
+```
+
 ## Training
+run:
 
-To train the model, run this command:
-
-```train
+```
 python my_yolov3/train.py --data myDataset.yaml --weights yolov3.pt --img 320\
         --cfg yolov3.yaml --epochs 40 --device 0,1,2,3 --batch-size 64
 ```
