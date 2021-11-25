@@ -24,11 +24,11 @@ NVIDIA GeForce 3090
 
 ## Preprocessing for Training
 
-```
+
 First put all train images provided in homework in my_dataset/images/train
 The run 「python split_data.py」 to split train data into train and valid, and
 it will also create the labels in my_dataset/label/train and in my_dataset/label/valid
-```
+
 
 ## Training
 run:
